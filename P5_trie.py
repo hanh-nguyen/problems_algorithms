@@ -67,3 +67,13 @@ node = MyTrie.find('tr')
 results = node.suffixes()
 print(results) 
 # ['ie', 'igger', 'igonometry', 'ipod']
+
+node = MyTrie.find('')
+results = node.suffixes()
+print(results) 
+# ['ant', 'anthology', 'antagonist', 'antonym', 'fun', 'function', 'factory', 'trie', 'trigger', 'trigonometry', 'tripod']
+
+node = MyTrie.find('x')
+results = node.suffixes()
+print(results) 
+# []

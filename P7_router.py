@@ -28,11 +28,11 @@ class RouteTrie:
         # Starting at the root, navigate the Trie to find a match for this path
         # Return the handler for a match, or None for no match
         current_node = self.root
-        for level in path_parts:
-            if level == '':
+        for part in path_parts:
+            if part == '':
                 continue
-            if level in current_node.children:
-                current_node = current_node.children[level]
+            if part in current_node.children:
+                current_node = current_node.children[part]
             else:
                 current_node = None
                 break

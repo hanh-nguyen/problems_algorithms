@@ -43,6 +43,7 @@ def test_function(test_case):
     else:
         print("Fail")
 
+# All the tests should print Pass
 test_case = [[1, 2, 3, 4, 5], [542, 31]]
 test_function(test_case)
 

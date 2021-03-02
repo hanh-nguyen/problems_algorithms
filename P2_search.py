@@ -52,6 +52,7 @@ def test_function(test_case):
     else:
         print("Fail")
 
+# All the tests should print Pass
 test_function([[6, 7, 8, 9, 10, 1, 2, 3, 4], 6])
 test_function([[6, 7, 8, 9, 10, 1, 2, 3, 4], 1])
 test_function([[6, 7, 8, 1, 2, 3, 4], 8])
